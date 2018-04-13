@@ -11,8 +11,12 @@ class Bootstrap {
 		$url = explode('/', $url);
 
 		// print_r($url);
+		if(empty($url[0]) || $url[0]=='index.php') {
+			$url[0] = 'index';
+		}
 
-		$file = 'controllers/'.$url[0].'Controller.php';
+		$file = 'controllers/'.ucfirst($url[0]).'Controller.php';
+
 		if(file_exists($file)){
 			require $file;	
 		} else {

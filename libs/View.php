@@ -5,11 +5,7 @@
 */
 class View
 {
-	
-	function __construct()
-	{
-		echo "This is the view";
-	}
+	public $site_url = '/mvcphp';
 
 	public function render($name) {
 		require 'views/'.$name.'.tpl.php';

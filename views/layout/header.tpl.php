@@ -30,8 +30,12 @@
           <a class="navbar-brand" href="#">Hospital</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="<?= $this->site_url ?>/">Home</a></li>
+            <li><a href="<?= $this->site_url ?>/help">Help</a></li>
+          </ul>
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#">Login</a></li>
+            <li><a href="#">Login</a></li>
             <li><a href="#about">Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
